@@ -1,7 +1,7 @@
 # msra-storybook-components
 
 ```
-npm add msra-my-storybook-component
+npm i msra-my-storybook-component
 ```
 
 ### Demo
