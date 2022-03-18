@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Semantic Realease
+name: Semantic Release
 
 # Controls when the workflow will run
 on:
@@ -27,12 +27,12 @@ jobs:
           node-version: 14.17
 
       - name: Install Dependencies
-        run: npm install
+        run: yarn install
 
       - name: Build App
-        run: npm run build
+        run: yarn build
 
-      - name: Semantic Realease
+      - name: Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
